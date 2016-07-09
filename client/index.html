@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<title>Callback</title>
 	<meta name="description" content="Description of the website">
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="static/css/set1.css">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.css">
 	<!-- Font Awesome -->
@@ -20,11 +23,16 @@
 	<script type="text/javascript" src="js/config.js"></script>
 	<!-- jQuery -->
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- Customize(personal) javascript -->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
 
 
 	<!-- Controllers -->
 	<script type="text/javascript" src="js/controllers/navController.js"></script>
 	<script type="text/javascript" src="js/controllers/mainController.js"></script>
+	<script type="text/javascript" src="js/controllers/registerController.js"></script>
+
 
 
 	<!-- Factories -->
@@ -50,11 +58,33 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	        <li class="active"><a href="#/">Home <span class="sr-only">(current)</span></a></li>
 	        <li><a href="#/">Link</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Link</a></li>
+	      	<li><a href="#/register">Register</a></li>
+	        <li><a href="#/">Sign In</a></li>
+	        <!-- <li uib-dropdown class="menu-lg">
+	          <a href=""  uib-dropdown-toggle class="menu-lg">Sign In <span class="caret"></span></a>
+	          <ul uib-dropdown-menu class="menu-lg">
+	          	<li class="menu-lg">
+					<form>
+						<div class="form-group">
+							 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+							 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address">
+						</div>
+						<div class="form-group">
+							 <label class="sr-only" for="exampleInputPassword2">Password</label>
+							 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+						</div>
+						<div class="form-group">
+							 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+						</div>
+
+					 </form>
+				</li>
+	          </ul>
+	        </li> -->
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
