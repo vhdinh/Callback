@@ -1,6 +1,6 @@
 callback_app.factory("logRegFactory", function($http, $location, $sessionStorage){
 	var factory = {}
-	// factory.user = {}
+	factory.users = {}
 	$sessionStorage.currUser;
 
 	factory.login = function(user, callback){
@@ -31,7 +31,16 @@ callback_app.factory("logRegFactory", function($http, $location, $sessionStorage
 	}
 
 	factory.getUser = function(){
+		console.log("CURRENT USER", $sessionStorage.currUser)
 		return $sessionStorage.currUser;
+	}
+
+	factory.getUsers = function(callback){
+		$http.get('/getUsers').success(function(data){
+			console.log("IN FACTORY GETTING USERS", data)
+			factory.users = data
+			callback(data)
+		})
 	}
 	factory.logout = function(){
 		$sessionStorage.currUser = null;

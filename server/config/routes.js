@@ -14,8 +14,8 @@ module.exports = function(app){
 		users.register(req,res)
 	})
 
-	// app.get("/getUsers", function(req, res){
-	// 	users.getUsers(req,res)
-	// })
+	app.get("/getUsers", function(req, res){
+		users.getUsers(req,res)
+	})
 	
 }
