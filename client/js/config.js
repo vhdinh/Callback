@@ -10,7 +10,11 @@ callback_app.config( function($routeProvider){
 	})
 	.when("/register", {
 		templateUrl: "static/partials/register.html",
-		controller: "registerController"
+		controller: "logRegController"
+	})
+	.when("/login", {
+		templateUrl: "static/partials/login.html",
+		controller: "logRegController"
 	})
 	.otherwise({
 		redirectTo: "/"

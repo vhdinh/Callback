@@ -1,43 +1,49 @@
 <div class="container">
+	<div ng-repeat="i in alerts">
+		<div class="alert alert-warning">
+  			{{i}}
+		</div>
 
-	<form>
-		<span class="input input--isao col-lg-12">
-			<input class="input__field input__field--isao" type="text" id="input-1" style="font-size: 16px" ng-model="userReg.first_name"/>
+	</div>
+
+	<form name="regForm">
+		<span class="input input--isao col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<input class="input__field input__field--isao" type="text" id="input-1" style="font-size: 16px" ng-model="userReg.first_name" required/>
 			<label class="input__label input__label--isao" for="input-1">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">First Name</span>
 			</label>
 		</span>
-		<span class="input input--isao col-lg-12">
-			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userReg.last_name"/>
+		<span class="input input--isao col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userReg.last_name" required/>
 			<label class="input__label input__label--isao" for="input-2">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">Last Name</span>
 			</label>
 		</span>
-		<span class="input input--isao col-lg-12">
-			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userReg.username"/>
+		<span class="input input--isao col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userReg.username" required/>
 			<label class="input__label input__label--isao" for="input-2">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">Username</span>
 			</label>
 		</span>
-		<span class="input input--isao col-lg-12">
-			<input class="input__field input__field--isao" type="email" id="input-3" style="font-size: 16px" ng-model="userReg.email"/>
+		<span class="input input--isao col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<input class="input__field input__field--isao" type="email" id="input-3" style="font-size: 16px" ng-model="userReg.email" required/>
 			<label class="input__label input__label--isao" for="input-3">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">Email</span>
 			</label>
 		</span>
-		<span class="input input--isao col-lg-12">
-			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userReg.password"/>
+		<span class="input input--isao col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<input class="input__field input__field--isao" type="password" id="input-2" style="font-size: 16px;" ng-model="userReg.password" required/>
 			<label class="input__label input__label--isao" for="input-2">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">Password</span>
 			</label>
 		</span>
-		<span class="input input--isao col-lg-12">
-			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userReg.password2"/>
+		<span class="input input--isao col-xs-12 col-sm-6 col-md-4 col-lg-4">
+			<input class="input__field input__field--isao" type="password" id="input-2" style="font-size: 16px;" ng-model="userReg.password2" required/>
 			<label class="input__label input__label--isao" for="input-2">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">Confirm Password</span>
 			</label>
 		</span>
-		<span class="col-lg-12">
+		<span class="input--isao col-lg-12" style="text-align: center">
 		<button class="btn btn-default input input--isao" ng-click="register(userReg)">Register</button>
 		</span>
 	</form>

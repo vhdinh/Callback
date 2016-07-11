@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, "./node_modules")));
 app.use(express.static(path.join(__dirname, "./client")));
 
 
-// require("./server/config/mongoose.js");
-// require("./server/config/routes.js")(app);
+require("./server/config/mongoose.js");
+require("./server/config/routes.js")(app);
 
 
 port = 8000;

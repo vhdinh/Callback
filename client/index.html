@@ -17,6 +17,8 @@
 	<script type="text/javascript" src="angular-route/angular-route.min.js"></script>
 	<!-- ngStorage for Session -->
 	<script type="text/javascript" src="ngStorage/ngStorage.min.js"></script>
+
+
 	<!-- Moment for time display -->
 	<script type="text/javascript" src="moment/moment.js"></script>
 	<!-- config.js for Routing -->
@@ -31,11 +33,12 @@
 	<!-- Controllers -->
 	<script type="text/javascript" src="js/controllers/navController.js"></script>
 	<script type="text/javascript" src="js/controllers/mainController.js"></script>
-	<script type="text/javascript" src="js/controllers/registerController.js"></script>
+	<script type="text/javascript" src="js/controllers/logRegController.js"></script>
 
 
 
 	<!-- Factories -->
+	<script type="text/javascript" src="js/factories/logRegFactory.js"></script>
 
 
 </head>
@@ -62,8 +65,9 @@
 	        <li><a href="#/">Link</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
-	      	<li><a href="#/register">Register</a></li>
-	        <li><a href="#/">Sign In</a></li>
+	      	<li ng-if="!user"><a href="#/register">Register</a></li>
+	        <li ng-if="!user"><a href="#/login">Sign In</a></li>
+	        <li ng-if="user"><a href="" ng-click="logout()">Logout</a></li>
 	        <!-- <li uib-dropdown class="menu-lg">
 	          <a href=""  uib-dropdown-toggle class="menu-lg">Sign In <span class="caret"></span></a>
 	          <ul uib-dropdown-menu class="menu-lg">
@@ -93,6 +97,7 @@
 		<!-- Partials get rendered -->
 		<div ng-view=""></div>
 	</div>
+
 
 
 
