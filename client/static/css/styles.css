@@ -3,3 +3,13 @@
 .menu-lg {
 	min-width: 200px;
 }
+
+form .login-button {
+	font-size: 20px;
+}
+
+form .login-button:hover{
+	background-color: #da7071;
+	color: white;
+	font-size: 20px;
+};

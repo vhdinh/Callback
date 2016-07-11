@@ -8,7 +8,7 @@
 
 	<form>
 		<span class="input input--isao col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userLog.username"/>
+			<input class="input__field input__field--isao" type="text" id="input-2" style="font-size: 16px;" ng-model="userLog.username" required/>
 			<label class="input__label input__label--isao" for="input-2">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">Username</span>
 			</label>
@@ -20,13 +20,13 @@
 			</label>
 		</span> -->
 		<span class="input input--isao col-xs-12 col-sm-6 col-md-6 col-lg-6">
-			<input class="input__field input__field--isao" type="password" id="input-2" style="font-size: 16px;" ng-model="userLog.password"/>
+			<input class="input__field input__field--isao" type="password" id="input-2" style="font-size: 16px;" ng-model="userLog.password" required/>
 			<label class="input__label input__label--isao" for="input-2">
 				<span class="input__label-content input__label-content--isao" style="font-size: 16px">Password</span>
 			</label>
 		</span>
 		<span class="input--isao col-lg-12" style="text-align: center">
-		<button class="btn btn-default input input--isao" ng-click="login(userLog)">Register</button>
+		<button class="btn btn-default input input--isao login-button" ng-click="login(userLog)">Login</button>
 		</span>
 	</form>
 

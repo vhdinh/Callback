@@ -34,7 +34,7 @@
 	<script type="text/javascript" src="js/controllers/navController.js"></script>
 	<script type="text/javascript" src="js/controllers/mainController.js"></script>
 	<script type="text/javascript" src="js/controllers/logRegController.js"></script>
-
+	<script type="text/javascript" src="js/controllers/userController.js"></script>
 
 
 	<!-- Factories -->
@@ -67,6 +67,8 @@
 	      <ul class="nav navbar-nav navbar-right">
 	      	<li ng-if="!user"><a href="#/register">Register</a></li>
 	        <li ng-if="!user"><a href="#/login">Sign In</a></li>
+	        <li ng-if="user"><a href="#/account">My Account</a></li>
+
 	        <li ng-if="user"><a href="" ng-click="logout()">Logout</a></li>
 	        <!-- <li uib-dropdown class="menu-lg">
 	          <a href=""  uib-dropdown-toggle class="menu-lg">Sign In <span class="caret"></span></a>

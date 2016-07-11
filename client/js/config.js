@@ -16,6 +16,10 @@ callback_app.config( function($routeProvider){
 		templateUrl: "static/partials/login.html",
 		controller: "logRegController"
 	})
+	.when("/account", {
+		templateUrl: "static/partials/account.html",
+		controller: "userController"
+	})
 	.otherwise({
 		redirectTo: "/"
 	})
