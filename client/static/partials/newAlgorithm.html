@@ -1,0 +1,25 @@
+<div class='container'>
+	<h1>New Algorithm</h1>
+	<form>
+	  <fieldset class="form-group">
+	    <label for="algorithm">Algorithm</label>
+	    <input type="text" ng-model='algorithm.title' class="form-control" id="algorithmTitle" placeholder="Enter an algorithm">
+	  </fieldset>
+	  <fieldset class="form-group">
+	    <label for="description">Description</label>
+	    <textarea ng-model='algorithm.description' type="text" class="form-control" id="algorithmDescription" placeholder="Description"></textarea>
+	  </fieldset>
+	  <fieldset class="form-group">
+	    <label for="Data Structure">Data Structures</label>
+	    <select ng-model='algorithm.category' class="form-control" id="dataStructure">
+	      <option value='array'>Arrays</option>
+	      <option value='list'>List</option>
+	      <option value='trees'>Trees</option>
+	      <option value='hashes'>Hashes</option>
+	      <option value='graphs'>Graphs</option>
+	      <option value='others'>Others</option>
+	    </select>
+	  </fieldset>
+	  <input ng-click='addAlgorithm(algorithm)' type="submit" class="btn btn-info" value="Submit Button">
+	</form>
+</div>

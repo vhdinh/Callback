@@ -20,6 +20,10 @@ callback_app.config( function($routeProvider){
 		templateUrl: "static/partials/account.html",
 		controller: "userController"
 	})
+	.when("/newAlgorithm",{
+		templateUrl:"static/partials/newAlgorithm.html",
+		controller: "algorithmController"
+	})
 	.otherwise({
 		redirectTo: "/"
 	})
