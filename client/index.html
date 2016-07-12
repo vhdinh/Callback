@@ -32,6 +32,7 @@
 
 	<!-- Controllers -->
 	<script type="text/javascript" src="js/controllers/navController.js"></script>
+	<script type="text/javascript" src="js/controllers/algorithmController.js"></script>
 	<script type="text/javascript" src="js/controllers/mainController.js"></script>
 	<script type="text/javascript" src="js/controllers/logRegController.js"></script>
 	<script type="text/javascript" src="js/controllers/userController.js"></script>
@@ -39,16 +40,16 @@
 
 	<!-- Factories -->
 	<script type="text/javascript" src="js/factories/logRegFactory.js"></script>
-
+	<script type="text/javascript" src="js/factories/algorithmFactory.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
 <body>
 	<div ng-controller="navController">
-			<div class="navbar navbar-fixed-top" data-activeslide="1">
-			<nav class="navbar navbar-default">
-	  <div class="container-fluid">
+		<div class="navbar navbar-fixed-top" data-activeslide="1">
+			<nav class="navbar navbar-default"> 
+	 		 <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header" uib-dropdown>
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" uib-dropdown-toggle>
@@ -94,17 +95,17 @@
 	          </ul>
 	        </li> -->
 	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-
-		<!-- Partials get rendered -->
-		<div ng-view=""></div>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		</div>
 	</div>
 
+		<!-- Partials get rendered -->
+			<div style='margin-top: 80px; display: block' ng-view=""></div>
+	
 
 
 
-
-</body>
+	</body>
 </html>
